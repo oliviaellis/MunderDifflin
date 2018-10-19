@@ -62,9 +62,13 @@ nav ul li a {
 
 }
 
-.staff img {
-  height: 120px;
+.staff div {
+  height: 200px;
+  text-align: center;
+}
+.staff div img {
   clip-path: circle(80px at center);
+  height: 120px;
 }
 
 .logo {
