@@ -8,7 +8,7 @@ var p7 = document.getElementById('p7-start');
 var p8 = document.getElementById('p8-start');
 var sheath = document.getElementById('sheath-start');
 
-function animatePaper() {
+window.onload = function animatePaper() {
   p1.id = "p1"
   setTimeout(function(){p2.id = "p2"}, 250);
   setTimeout(function(){p3.id = "p3"}, 500);

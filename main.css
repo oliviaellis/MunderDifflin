@@ -47,124 +47,87 @@ nav ul li a {
   height: 10px;
   width: 200px;
   background-color: white;
+  position: absolute;
+  transition: bottom 1s linear, opacity 1s;
+  left: 42%;
 }
 
 #p1-start {
   opacity: 0;
-  position: absolute;
   bottom: 50%;
-  left: 42%;
 }
 
 #p1 {
-  position: absolute;
   bottom: 0;
-  left: 42%;
-  transition: bottom 1s linear, opacity 1s;
 
 }
 
 #p2-start {
   opacity: 0;
-  position: absolute;
   bottom: 52%;
-  left: 42%;
 }
 
 #p2 {
-  position: absolute;
   bottom: 4%;
-  left: 42%;
-  transition: bottom 1s linear, opacity 1s;
 }
 
 #p3-start {
   opacity: 0;
-  position: absolute;
   bottom: 54%;
-  left: 42%;
 }
 
 #p3 {
-  position: absolute;
   bottom: 8%;
-  left: 42%;
-  transition: bottom 1s linear, opacity 1s;
 }
 
 #p4-start {
   opacity: 0;
-  position: absolute;
   bottom: 56%;
-  left: 42%;
 }
 
 #p4 {
-  position: absolute;
   bottom: 12%;
-  left: 42%;
-  transition: bottom 1s linear, opacity 1s;
 }
 
 #p5-start {
   opacity: 0;
-  position: absolute;
   bottom: 58%;
-  left: 42%;
 }
 
 #p5 {
-  position: absolute;
   bottom: 16%;
-  left: 42%;
-  transition: bottom 1s linear, opacity 1s;
 }
 
 #p6-start {
   opacity: 0;
-  position: absolute;
   bottom: 60%;
-  left: 42%;
 }
 
 #p6 {
-  position: absolute;
   bottom: 20%;
-  left: 42%;
-  transition: bottom 1s linear, opacity 1s;
 }
 
 #p7-start {
   opacity: 0;
-  position: absolute;
   bottom: 62%;
-  left: 42%;
 }
 
 #p7 {
-  position: absolute;
   bottom: 24%;
-  left: 42%;
-  transition: bottom 1s linear, opacity 1s;
 }
 
 #p8-start {
   opacity: 0;
-  position: absolute;
   bottom: 64%;
-  left: 42%;
 }
 
 #p8 {
-  position: absolute;
   bottom: 28%;
-  left: 42%;
-  transition: bottom 1s linear, opacity 1s;
 }
 
 #sheath-start {
   opacity: 0;
-  height: 180px;
+  height: 220px;
   width: 220px;
   position: absolute;
   bottom: 50%;
@@ -173,7 +136,7 @@ nav ul li a {
 }
 
 #sheath {
-  height: 180px;
+  height: 220px;
   width: 220px;
   position: absolute;
   bottom: 0;
@@ -182,16 +145,25 @@ nav ul li a {
   transition: bottom 1s linear, opacity 1s;
 }
 
-
-/* #box-label {
+#box-label {
   background-image: url('MunderDifflinLogoWhite.jpg');
   background-size: cover;
   height: 150px;
   width: 150px;
   position: absolute;
-  bottom: 2%;
+  bottom: 6%;
   left: 44%;
-} */
+  animation-name: box-label;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes box-label {
+  0% {transform: scale(0);}
+  80% {transform: scale(1.1)}
+  100% {transform: scale(1)}
+}
 
 .staff {
   display: grid;
