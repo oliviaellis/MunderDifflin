@@ -2,22 +2,28 @@ html {
   font-family: sans-serif;
 }
 
+body {
+  margin: 0;
+}
+
 nav {
   position: fixed;
   background-color: white;
   z-index: 1;
   margin: 0;
+  width: 100%;
+  height: 75px;
 }
 
 nav img {
-  width: 250px;
+  width: 75px;
   margin-left: 50px;
 }
 
 nav ul {
   display: inline;
   position: relative;
-  top: 100px;
+  top: 50px;
   padding-left: 100px;
 }
 nav ul li {
@@ -28,27 +34,164 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: black;
-  font-size: 1.7em;
+  font-size: 1.2em;
 }
 
-.content {
-  margin: 0 50px;
-}
-
-.slideshow {
+.main {
   height: 500px;
   position: relative;
+  background-color: #333;
 }
 
-.slideshow img {
-  display: block;
-  margin: auto;
+.paper {
+  height: 10px;
+  width: 200px;
+  background-color: white;
 }
 
-.recycling {
-  position: relative;
-  top: 300px;
+#p1-start {
+  opacity: 0;
+  position: absolute;
+  bottom: 50%;
+  left: 42%;
 }
+
+#p1 {
+  position: absolute;
+  bottom: 0;
+  left: 42%;
+  transition: bottom 1s linear, opacity 1s;
+
+}
+
+#p2-start {
+  opacity: 0;
+  position: absolute;
+  bottom: 52%;
+  left: 42%;
+}
+
+#p2 {
+  position: absolute;
+  bottom: 4%;
+  left: 42%;
+  transition: bottom 1s linear, opacity 1s;
+}
+
+#p3-start {
+  opacity: 0;
+  position: absolute;
+  bottom: 54%;
+  left: 42%;
+}
+
+#p3 {
+  position: absolute;
+  bottom: 8%;
+  left: 42%;
+  transition: bottom 1s linear, opacity 1s;
+}
+
+#p4-start {
+  opacity: 0;
+  position: absolute;
+  bottom: 56%;
+  left: 42%;
+}
+
+#p4 {
+  position: absolute;
+  bottom: 12%;
+  left: 42%;
+  transition: bottom 1s linear, opacity 1s;
+}
+
+#p5-start {
+  opacity: 0;
+  position: absolute;
+  bottom: 58%;
+  left: 42%;
+}
+
+#p5 {
+  position: absolute;
+  bottom: 16%;
+  left: 42%;
+  transition: bottom 1s linear, opacity 1s;
+}
+
+#p6-start {
+  opacity: 0;
+  position: absolute;
+  bottom: 60%;
+  left: 42%;
+}
+
+#p6 {
+  position: absolute;
+  bottom: 20%;
+  left: 42%;
+  transition: bottom 1s linear, opacity 1s;
+}
+
+#p7-start {
+  opacity: 0;
+  position: absolute;
+  bottom: 62%;
+  left: 42%;
+}
+
+#p7 {
+  position: absolute;
+  bottom: 24%;
+  left: 42%;
+  transition: bottom 1s linear, opacity 1s;
+}
+
+#p8-start {
+  opacity: 0;
+  position: absolute;
+  bottom: 64%;
+  left: 42%;
+}
+
+#p8 {
+  position: absolute;
+  bottom: 28%;
+  left: 42%;
+  transition: bottom 1s linear, opacity 1s;
+}
+
+#sheath-start {
+  opacity: 0;
+  height: 180px;
+  width: 220px;
+  position: absolute;
+  bottom: 50%;
+  left: 41.2%;
+  background-color: blue;
+}
+
+#sheath {
+  height: 180px;
+  width: 220px;
+  position: absolute;
+  bottom: 0;
+  left: 41.2%;
+  background-color: blue;
+  transition: bottom 1s linear, opacity 1s;
+}
+
+
+/* #box-label {
+  background-image: url('MunderDifflinLogoWhite.jpg');
+  background-size: cover;
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  bottom: 2%;
+  left: 44%;
+} */
 
 .staff {
   display: grid;
@@ -56,7 +199,6 @@ nav ul li a {
   position: relative;
   width: 80%;
   justify-content: center;
-  margin: 400px 10% 0 10%;
   grid-column-gap: 70px;
   grid-row-gap: 30px;
 
@@ -66,6 +208,7 @@ nav ul li a {
   height: 200px;
   text-align: center;
 }
+
 .staff div img {
   clip-path: circle(80px at center);
   height: 120px;
