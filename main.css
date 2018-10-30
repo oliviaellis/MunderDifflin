@@ -52,6 +52,10 @@ nav ul li a {
   left: 42%;
 }
 
+.paper-out {
+  display: none;
+}
+
 #p1-start {
   opacity: 0;
   bottom: 50%;
@@ -131,7 +135,7 @@ nav ul li a {
   width: 220px;
   position: absolute;
   bottom: 50%;
-  left: 41.2%;
+  right: 40%;
   background-color: blue;
 }
 
@@ -140,9 +144,19 @@ nav ul li a {
   width: 220px;
   position: absolute;
   bottom: 0;
-  left: 41.2%;
+  right: 40%;
   background-color: blue;
   transition: bottom 1s linear, opacity 1s;
+}
+
+#sheath-end {
+  height: 220px;
+  width: 220px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: blue;
+  transition: right 1s linear;
 }
 
 #box-label {
@@ -152,7 +166,7 @@ nav ul li a {
   width: 150px;
   position: absolute;
   bottom: 6%;
-  left: 44%;
+  right: 43%;
   animation-name: box-label;
   animation-duration: 1s;
   animation-delay: 3s;
@@ -163,6 +177,17 @@ nav ul li a {
   0% {transform: scale(0);}
   80% {transform: scale(1.1)}
   100% {transform: scale(1)}
+}
+
+#box-label-end {
+  background-image: url('MunderDifflinLogoWhite.jpg');
+  background-size: cover;
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  bottom: 6%;
+  right: 3%;
+  transition: right 1s linear;
 }
 
 .staff {

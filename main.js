@@ -7,6 +7,9 @@ var p6 = document.getElementById('p6-start');
 var p7 = document.getElementById('p7-start');
 var p8 = document.getElementById('p8-start');
 var sheath = document.getElementById('sheath-start');
+var boxLabel = document.getElementById('box-label');
+
+var papers = [p1, p2, p3, p4,  p5, p6, p7, p8];
 
 window.onload = function animatePaper() {
   p1.id = "p1"
@@ -18,4 +21,13 @@ window.onload = function animatePaper() {
   setTimeout(function(){p7.id = "p7"}, 1500);
   setTimeout(function(){p8.id = "p8"}, 1750);
   setTimeout(function(){sheath.id = "sheath"}, 2250);
+  setTimeout (function() {
+    for (i = 0; i < papers.length; i++) {
+      p = papers[i];
+      p.classList.remove('paper');
+      p.classList.add('paper-out');
+    }
+  }, 4200);
+  setTimeout(function(){sheath.id = "sheath-end"}, 4200);
+  setTimeout(function(){boxLabel.id = "box-label-end"}, 4200);
 }
