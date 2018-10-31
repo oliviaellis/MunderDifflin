@@ -32,6 +32,64 @@ window.onload = function animatePaper() {
   setTimeout(function(){boxLabel.id = "box-label-end"}, 4200);
 }
 
+var product1 = document.getElementById('o1');
+var product2 = document.getElementById('o2');
+var product3 = document.getElementById('o3');
+var product4 = document.getElementById('o4');
+
+var products = [product1, product2, product3, product4];
+
+function opaque() {
+  product1.style.opacity = "0.8";
+}
+
+function revert() {
+  product1.style.opacity = "0.5";
+}
+
+product1.addEventListener('mouseover', opaque);
+product1.addEventListener('mouseout', revert);
+
+function opaque2() {
+  product2.style.opacity = "0.8";
+}
+
+function revert2() {
+  product2.style.opacity = "0.5";
+}
+
+product2.addEventListener('mouseover', opaque2);
+product2.addEventListener('mouseout', revert2);
+
+function opaque3() {
+  product3.style.opacity = "0.8";
+}
+
+function revert3() {
+  product3.style.opacity = "0.5";
+}
+
+product3.addEventListener('mouseover', opaque3);
+product3.addEventListener('mouseout', revert3);
+
+function opaque4() {
+  product4.style.opacity = "0.8";
+}
+
+function revert4() {
+  product4.style.opacity = "0.5";
+}
+
+product4.addEventListener('mouseover', opaque4);
+product4.addEventListener('mouseout', revert4);
+
+//  This part works but defining the functions tripped me up
+// for (i = 0; i < products.length; i++) {
+//   products[i].addEventListener('mouseover', opaque);
+//   products[i].addEventListener('mouseout', revert);
+// }
+
+
 function earthSpin() {
   earth.id = "earth-spin";
 }
