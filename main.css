@@ -1,5 +1,5 @@
 html {
-  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -53,6 +53,7 @@ h2 {
   animation-duration: 2.5s;
   animation-delay: 4s;
   animation-fill-mode: backwards;
+  font-family: 'Bitter', serif;
 }
 
 @keyframes slide-right {
@@ -215,6 +216,7 @@ h2 {
 
 .products h3 {
   font-size: 2em;
+  font-family: 'Bitter', serif;
   margin: 50px 0 0 144px;
 }
 
@@ -257,6 +259,7 @@ h2 {
 
 .recycling h3 {
   font-size: 2em;
+  font-family: 'Bitter', serif;
   padding-top: 50px;
   padding-left: 144px;
   margin: 0;
@@ -281,6 +284,7 @@ h2 {
 .staff h3 {
   grid-column: 1 / 5;
   font-size: 2em;
+  font-family: 'Bitter', serif;
 }
 .staff div {
   height: 200px;
