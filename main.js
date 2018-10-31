@@ -31,3 +31,10 @@ window.onload = function animatePaper() {
   setTimeout(function(){sheath.id = "sheath-end"}, 4200);
   setTimeout(function(){boxLabel.id = "box-label-end"}, 4200);
 }
+
+function earthSpin() {
+  earth.id = "earth-spin";
+}
+
+var earth = document.getElementById('earth');
+earth.addEventListener('mouseover', earthSpin)
