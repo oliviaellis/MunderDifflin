@@ -302,6 +302,11 @@ h2 {
   height: 300px;
   position: relative;
   bottom: 50px;
+  transition: transform 2s;
+}
+
+.recycling img:hover {
+  transform: rotate(360deg);
 }
 
 .recycling h3 {
@@ -310,11 +315,6 @@ h2 {
   padding-top: 50px;
   padding-left: 144px;
   margin: 0;
-}
-
-#earth-spin {
-  transform: rotate(360deg);
-  transition: transform 2s;
 }
 
 .staff {
