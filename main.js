@@ -17,9 +17,7 @@ window.onload = function animatePaper() {
   p1.id = "p1"
   for (i = 0; i < papers.length-1; i++) {
   var paperCount = 'p'+counter;
-  console.log(paperCount);
   var paperPosition = document.getElementById('p'+counter+'-start');
-  console.log(paperPosition);
   paperPosition.setAttribute('id', paperCount);
   counter++;
   }
@@ -34,24 +32,3 @@ window.onload = function animatePaper() {
   }, 4200);
   setTimeout(function(){sheath.id = "sheath-end"}, 4200);
   setTimeout(function(){boxLabel.id = "box-label-end"}, 4200);
-
-var product1 = document.getElementById('o1');
-var product2 = document.getElementById('o2');
-var product3 = document.getElementById('o3');
-var product4 = document.getElementById('o4');
-
-var products = [product1, product2, product3, product4];
-
-//  This part works but defining the functions tripped me up
-// for (i = 0; i < products.length; i++) {
-//   products[i].addEventListener('mouseover', opaque);
-//   products[i].addEventListener('mouseout', revert);
-// }
-
-
-function earthSpin() {
-  earth.id = "earth-spin";
-}
-
-var earth = document.getElementById('earth');
-earth.addEventListener('mouseover', earthSpin)
