@@ -91,6 +91,7 @@ h2 {
 
 #p2 {
   bottom: 4%;
+  transition-delay: .25s;
 }
 
 #p3-start {
@@ -100,6 +101,7 @@ h2 {
 
 #p3 {
   bottom: 8%;
+  transition-delay: .5s;
 }
 
 #p4-start {
@@ -109,6 +111,7 @@ h2 {
 
 #p4 {
   bottom: 12%;
+  transition-delay: .75s;
 }
 
 #p5-start {
@@ -118,6 +121,7 @@ h2 {
 
 #p5 {
   bottom: 16%;
+  transition-delay: 1s;
 }
 
 #p6-start {
@@ -127,6 +131,7 @@ h2 {
 
 #p6 {
   bottom: 20%;
+  transition-delay: 1.25s;
 }
 
 #p7-start {
@@ -136,6 +141,7 @@ h2 {
 
 #p7 {
   bottom: 24%;
+  transition-delay: 1.5s;
 }
 
 #p8-start {
@@ -145,6 +151,7 @@ h2 {
 
 #p8 {
   bottom: 28%;
+  transition-delay: 1.75s;
 }
 
 #sheath-start {

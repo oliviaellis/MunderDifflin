@@ -10,17 +10,21 @@ var sheath = document.getElementById('sheath-start');
 var boxLabel = document.getElementById('box-label');
 
 var papers = [p1, p2, p3, p4,  p5, p6, p7, p8];
+var counter = 2
+var delay = 250;
 
 window.onload = function animatePaper() {
   p1.id = "p1"
-  setTimeout(function(){p2.id = "p2"}, 250);
-  setTimeout(function(){p3.id = "p3"}, 500);
-  setTimeout(function(){p4.id = "p4"}, 750);
-  setTimeout(function(){p5.id = "p5"}, 1000);
-  setTimeout(function(){p6.id = "p6"}, 1250);
-  setTimeout(function(){p7.id = "p7"}, 1500);
-  setTimeout(function(){p8.id = "p8"}, 1750);
-  setTimeout(function(){sheath.id = "sheath"}, 2250);
+  for (i = 0; i < papers.length-1; i++) {
+  var paperCount = 'p'+counter;
+  console.log(paperCount);
+  var paperPosition = document.getElementById('p'+counter+'-start');
+  console.log(paperPosition);
+  paperPosition.setAttribute('id', paperCount);
+  counter++;
+  }
+
+  setTimeout(function(){sheath.id = "sheath"}, 2250);}
   setTimeout (function() {
     for (i = 0; i < papers.length; i++) {
       p = papers[i];
@@ -30,7 +34,6 @@ window.onload = function animatePaper() {
   }, 4200);
   setTimeout(function(){sheath.id = "sheath-end"}, 4200);
   setTimeout(function(){boxLabel.id = "box-label-end"}, 4200);
-}
 
 var product1 = document.getElementById('o1');
 var product2 = document.getElementById('o2');
