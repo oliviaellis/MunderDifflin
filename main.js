@@ -17,8 +17,7 @@ window.onload = function animatePaper() {
   p1.id = "p1"
   for (i = 0; i < papers.length-1; i++) {
   var paperCount = 'p'+counter;
-  var paperPosition = document.getElementById('p'+counter+'-start');
-  paperPosition.setAttribute('id', paperCount);
+  papers[counter-1].setAttribute('id', paperCount);
   counter++;
   }
 
